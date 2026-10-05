@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%" style="background:#0a0c10; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10" />
+      <stop offset="100%" stop-color="#12161f" />
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="pinkCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b1228" />
+      <stop offset="100%" stop-color="#1f0a15" />
+    </linearGradient>
+    <linearGradient id="purpleCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a163b" />
+      <stop offset="100%" stop-color="#150a1f" />
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#133324" />
+      <stop offset="100%" stop-color="#0b1f15" />
+    </linearGradient>
+    <linearGradient id="orangeCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#332114" />
+      <stop offset="100%" stop-color="#1f140b" />
+    </linearGradient>
+    <linearGradient id="cyanCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122d3b" />
+      <stop offset="100%" stop-color="#0a1a24" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="620" fill="url(#bgGrad)" />
+
+  <!-- Header -->
+  <text x="50" y="55" font-size="24" font-weight="700" fill="#f8fafc" letter-spacing="-0.5">swiftui-animation-recipes</text>
+  <text x="50" y="80" font-size="13" font-weight="400" fill="#94a3b8">Zero-Dependency, Production-Ready, Copy-Paste SwiftUI Animations &amp; Micro-Interactions</text>
+
+  <!-- Row 1: 3 Cards -->
+  <!-- Card 1: Spring Buttons -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="115" width="280" height="210" rx="14" fill="url(#blueCard)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="85" cy="150" r="16" fill="#38bdf8" fill-opacity="0.15" />
+    <text x="85" y="156" font-size="15" font-weight="700" fill="#38bdf8" text-anchor="middle">🔘</text>
+    <text x="115" y="156" font-size="16" font-weight="600" fill="#f8fafc">Spring &amp; Morph Buttons</text>
+
+    <text x="75" y="195" font-size="12" fill="#cbd5e1">• Physics scale-down on press</text>
+    <text x="75" y="220" font-size="12" fill="#cbd5e1">• State-driven capsule morph</text>
+    <text x="75" y="245" font-size="12" fill="#cbd5e1">• Spinner &amp; checkmark states</text>
+    <text x="75" y="270" font-size="12" fill="#cbd5e1">• Configurable damping/response</text>
+    <text x="75" y="300" font-size="11" fill="#38bdf8">.springPress(scale: 0.94)</text>
+  </g>
+
+  <!-- Card 2: Skeleton Shimmer -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="115" width="280" height="210" rx="14" fill="url(#purpleCard)" stroke="#c084fc" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="395" cy="150" r="16" fill="#c084fc" fill-opacity="0.15" />
+    <text x="395" y="156" font-size="15" font-weight="700" fill="#c084fc" text-anchor="middle">✨</text>
+    <text x="425" y="156" font-size="16" font-weight="600" fill="#f8fafc">Shimmer Skeleton</text>
+
+    <text x="385" y="195" font-size="12" fill="#cbd5e1">• Dynamic gradient mask sweep</text>
+    <text x="385" y="220" font-size="12" fill="#cbd5e1">• Pre-built list row placeholders</text>
+    <text x="385" y="245" font-size="12" fill="#cbd5e1">• Pre-built card placeholders</text>
+    <text x="385" y="270" font-size="12" fill="#cbd5e1">• Zero flicker async loading</text>
+    <text x="385" y="300" font-size="11" fill="#c084fc">.shimmering(active: true)</text>
+  </g>
+
+  <!-- Card 3: Card Stack Swipe -->
+  <g filter="url(#shadow)">
+    <rect x="670" y="115" width="280" height="210" rx="14" fill="url(#pinkCard)" stroke="#f472b6" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="705" cy="150" r="16" fill="#f472b6" fill-opacity="0.15" />
+    <text x="705" y="156" font-size="15" font-weight="700" fill="#f472b6" text-anchor="middle">🃏</text>
+    <text x="735" y="156" font-size="16" font-weight="600" fill="#f8fafc">Swipeable Card Stack</text>
+
+    <text x="695" y="195" font-size="12" fill="#cbd5e1">• Tinder / Bumble drag gesture</text>
+    <text x="695" y="220" font-size="12" fill="#cbd5e1">• Velocity tilt &amp; rotation physics</text>
+    <text x="695" y="245" font-size="12" fill="#cbd5e1">• Z-index depth scale cascading</text>
+    <text x="695" y="270" font-size="12" fill="#cbd5e1">• Left / Right dismissal callbacks</text>
+    <text x="695" y="300" font-size="11" fill="#f472b6">CardStack(items:) { ... }</text>
+  </g>
+
+  <!-- Row 2: 3 Cards -->
+  <!-- Card 4: Confetti Cannon -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="355" width="280" height="225" rx="14" fill="url(#orangeCard)" stroke="#fb923c" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="85" cy="390" r="16" fill="#fb923c" fill-opacity="0.15" />
+    <text x="85" y="396" font-size="15" font-weight="700" fill="#fb923c" text-anchor="middle">🎉</text>
+    <text x="115" y="396" font-size="16" font-weight="600" fill="#f8fafc">Confetti Cannon</text>
+
+    <text x="75" y="435" font-size="12" fill="#cbd5e1">• 2-phase explosion &amp; gravity drift</text>
+    <text x="75" y="460" font-size="12" fill="#cbd5e1">• Customizable particle counts</text>
+    <text x="75" y="485" font-size="12" fill="#cbd5e1">• Angular rotation &amp; scale physics</text>
+    <text x="75" y="510" font-size="12" fill="#cbd5e1">• Single binding trigger API</text>
+    <text x="75" y="540" font-size="11" fill="#fb923c">.confettiCannon(trigger: $done)</text>
+  </g>
+
+  <!-- Card 5: Fluid Bottom Sheet -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="355" width="280" height="225" rx="14" fill="url(#greenCard)" stroke="#34d399" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="395" cy="390" r="16" fill="#34d399" fill-opacity="0.15" />
+    <text x="395" y="396" font-size="15" font-weight="700" fill="#34d399" text-anchor="middle">📑</text>
+    <text x="425" y="396" font-size="16" font-weight="600" fill="#f8fafc">Fluid Bottom Sheet</text>
+
+    <text x="385" y="435" font-size="12" fill="#cbd5e1">• Snapping detents (.collapsed, .half)</text>
+    <text x="385" y="460" font-size="12" fill="#cbd5e1">• Drag gesture velocity prediction</text>
+    <text x="385" y="485" font-size="12" fill="#cbd5e1">• Cross-platform iOS + macOS</text>
+    <text x="385" y="510" font-size="12" fill="#cbd5e1">• Smooth spring restoration</text>
+    <text x="385" y="540" font-size="11" fill="#34d399">FluidBottomSheet(detents:) { ... }</text>
+  </g>
+
+  <!-- Card 6: Magnetic Tab Bar -->
+  <g filter="url(#shadow)">
+    <rect x="670" y="355" width="280" height="225" rx="14" fill="url(#cyanCard)" stroke="#22d3ee" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="705" cy="390" r="16" fill="#22d3ee" fill-opacity="0.15" />
+    <text x="705" y="396" font-size="15" font-weight="700" fill="#22d3ee" text-anchor="middle">🧭</text>
+    <text x="735" y="396" font-size="16" font-weight="600" fill="#f8fafc">Magnetic Tab Bar</text>
+
+    <text x="695" y="435" font-size="12" fill="#cbd5e1">• Sliding liquid capsule indicator</text>
+    <text x="695" y="460" font-size="12" fill="#cbd5e1">• matchedGeometryEffect tracking</text>
+    <text x="695" y="485" font-size="12" fill="#cbd5e1">• Dynamic icon expansion</text>
+    <text x="695" y="510" font-size="12" fill="#cbd5e1">• Frosted glass floating pill</text>
+    <text x="695" y="540" font-size="11" fill="#22d3ee">MagneticTabBar(tabs: $selected)</text>
+  </g>
+</svg>
